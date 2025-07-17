@@ -1,0 +1,285 @@
+// ==========================================================================
+// Typography Showcase Component
+// ==========================================================================
+
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.typography-showcase {
+  min-height: 100vh;
+  background: $white;
+
+  // ==========================================================================
+  // Header
+  // ==========================================================================
+
+  &__header {
+    background: $neutral-50;
+    padding: 4rem 5rem;
+    border-bottom: 1px solid #e5e7eb;
+
+    @include mobile {
+      padding: 2rem 1rem;
+    }
+
+    @include tablet {
+      padding: 3rem 2rem;
+    }
+  }
+
+  &__header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+
+    svg {
+      width: 100px;
+      height: auto;
+
+      @include mobile {
+        width: 70px;
+      }
+    }
+  }
+
+  &__header-text {
+    flex: 1;
+  }
+
+  &__title {
+    @include heading-h1($weight-bold);
+    margin: 0 0 1.25rem 0;
+    color: $primary-text-black;
+
+    @include mobile {
+      font-size: clamp(48px, 8vw, 72px);
+      line-height: 1.1;
+    }
+  }
+
+  &__description {
+    @include body-text();
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: $neutral-700;
+    margin: 0;
+    max-width: 70ch;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  // ==========================================================================
+  // Main Content
+  // ==========================================================================
+
+  &__main {
+    padding: 4rem 7rem;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include mobile {
+      padding: 2rem 1rem;
+    }
+
+    @include tablet {
+      padding: 3rem 2rem;
+    }
+
+    @include desktop {
+      padding: 4rem 5rem;
+    }
+  }
+
+  // ==========================================================================
+  // Footer
+  // ==========================================================================
+
+  &__footer {
+    background: $neutral-50;
+    padding: 4rem 5rem;
+
+    @include mobile {
+      padding: 2rem 1rem;
+    }
+
+    @include tablet {
+      padding: 3rem 2rem;
+    }
+  }
+
+  &__footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__logo {
+    font-family: $font-body;
+    font-size: 1.25rem;
+    font-weight: $weight-bold;
+    letter-spacing: -0.05em;
+  }
+
+  &__footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    @include mobile {
+      gap: 1rem;
+    }
+  }
+
+  &__footer-link {
+    color: $neutral-500;
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: $weight-regular;
+    text-decoration: none;
+    letter-spacing: -0.04em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $neutral-700;
+    }
+  }
+
+  &__footer-divider {
+    height: 1px;
+    background: $neutral-200;
+  }
+
+  &__footer-copyright {
+    color: $neutral-500;
+    font-family: $font-body;
+    font-size: 0.875rem;
+    font-weight: $weight-regular;
+    letter-spacing: -0.035em;
+    margin: 0;
+  }
+}
+
+// ==========================================================================
+// Typography Section
+// ==========================================================================
+
+.typography-section {
+  margin-bottom: 5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $neutral-200;
+  }
+
+  &__title {
+    @include heading-h4($weight-bold);
+    color: $primary-900;
+    margin: 0 0 0.75rem 0;
+  }
+
+  &__meta {
+    @include body-text();
+    font-size: 0.875rem;
+    color: $neutral-500;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  &__examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    align-items: flex-start;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include large-desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+// ==========================================================================
+// Typography Example
+// ==========================================================================
+
+.typography-example {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+// ==========================================================================
+// Responsive Adjustments
+// ==========================================================================
+
+@include mobile {
+  .typography-section__examples {
+    // Make text smaller on mobile for better fit
+    .display-d1--regular,
+    .display-d1--semi-bold,
+    .display-d1--bold {
+      font-size: clamp(36px, 10vw, 60px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .display-d2--regular,
+    .display-d2--bold {
+      font-size: clamp(28px, 8vw, 48px) !important;
+      line-height: 1.2 !important;
+    }
+  }
+}
+
+@include tablet {
+  .typography-section__examples {
+    // Adjust text size for tablet
+    .display-d1--regular,
+    .display-d1--semi-bold,
+    .display-d1--bold {
+      font-size: clamp(48px, 8vw, 80px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .display-d2--regular,
+    .display-d2--bold {
+      font-size: clamp(36px, 6vw, 56px) !important;
+      line-height: 1.2 !important;
+    }
+  }
+}
