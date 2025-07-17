@@ -15,15 +15,15 @@
 
   &__header {
     background: $neutral-50;
-    padding: 4rem 5rem;
+    padding: 2rem 1rem;
     border-bottom: 1px solid #e5e7eb;
 
-    @include mobile {
-      padding: 2rem 1rem;
+    @include md {
+      padding: 3rem 2rem;
     }
 
-    @include tablet {
-      padding: 3rem 2rem;
+    @include lg {
+      padding: 4rem 5rem;
     }
   }
 
@@ -62,10 +62,7 @@
     margin: 0 0 1.25rem 0;
     color: $primary-text-black;
 
-    @include mobile {
-      font-size: clamp(48px, 8vw, 72px);
-      line-height: 1.1;
-    }
+    // Mobile styles already handled by heading-h1 mixin
   }
 
   &__description {
@@ -76,9 +73,7 @@
     margin: 0;
     max-width: 70ch;
 
-    @include mobile {
-      font-size: 1rem;
-    }
+    // Mobile styles already handled by body-text mixin
   }
 
   // ==========================================================================
@@ -86,20 +81,20 @@
   // ==========================================================================
 
   &__main {
-    padding: 4rem 7rem;
+    padding: 2rem 1rem;
     max-width: 1440px;
     margin: 0 auto;
 
-    @include mobile {
-      padding: 2rem 1rem;
-    }
-
-    @include tablet {
+    @include md {
       padding: 3rem 2rem;
     }
 
-    @include desktop {
+    @include lg {
       padding: 4rem 5rem;
+    }
+
+    @include xl {
+      padding: 4rem 7rem;
     }
   }
 
@@ -109,14 +104,14 @@
 
   &__footer {
     background: $neutral-50;
-    padding: 4rem 5rem;
+    padding: 2rem 1rem;
 
-    @include mobile {
-      padding: 2rem 1rem;
+    @include md {
+      padding: 3rem 2rem;
     }
 
-    @include tablet {
-      padding: 3rem 2rem;
+    @include lg {
+      padding: 4rem 5rem;
     }
   }
 
