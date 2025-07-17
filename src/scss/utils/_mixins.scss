@@ -91,136 +91,136 @@
   }
 }
 
-// Heading H1
+// Heading H1 (Mobile-First)
 @mixin heading-h1($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(32px, 4.5vw, 64px);
-  line-height: clamp(40px, 5.5vw, 83px);
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 64px;
     line-height: 83px;
   }
 }
 
-// Heading H1 Small
+// Heading H1 Small (Mobile-First)
 @mixin heading-h1-small($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(28px, 3.8vw, 54px);
-  line-height: clamp(36px, 4.8vw, 70px);
+  font-size: 28px;
+  line-height: 36px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 54px;
     line-height: 70px;
   }
 }
 
-// Heading H2
+// Heading H2 (Mobile-First)
 @mixin heading-h2($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(24px, 3.2vw, 48px);
-  line-height: clamp(32px, 4.2vw, 62px);
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 48px;
     line-height: 62px;
   }
 }
 
-// Heading H2 Medium
+// Heading H2 Medium (Mobile-First)
 @mixin heading-h2-medium($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(22px, 2.8vw, 40px);
-  line-height: clamp(30px, 3.8vw, 52px);
+  font-size: 22px;
+  line-height: 30px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 40px;
     line-height: 52px;
   }
 }
 
-// Heading H2 Small
+// Heading H2 Small (Mobile-First)
 @mixin heading-h2-small($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(20px, 2.5vw, 36px);
-  line-height: clamp(28px, 3.2vw, 47px);
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 36px;
     line-height: 47px;
   }
 }
 
-// Heading H3
+// Heading H3 (Mobile-First)
 @mixin heading-h3($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(18px, 2.2vw, 32px);
-  line-height: clamp(26px, 2.8vw, 42px);
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 32px;
     line-height: 42px;
   }
 }
 
-// Heading H3 Small
+// Heading H3 Small (Mobile-First)
 @mixin heading-h3-small($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(16px, 2vw, 28px);
-  line-height: clamp(24px, 2.5vw, 36px);
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
-// Heading H4
+// Heading H4 (Mobile-First)
 @mixin heading-h4($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(14px, 1.8vw, 24px);
-  line-height: clamp(22px, 2.2vw, 31px);
+  font-size: 14px;
+  line-height: 22px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 24px;
     line-height: 31px;
   }
 }
 
-// Heading H5
+// Heading H5 (Mobile-First)
 @mixin heading-h5($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(12px, 1.5vw, 20px);
-  line-height: clamp(18px, 1.8vw, 26px);
+  font-size: 14px;
+  line-height: 18px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 20px;
     line-height: 26px;
   }
