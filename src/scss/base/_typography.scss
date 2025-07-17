@@ -447,17 +447,15 @@ p {
 // ==========================================================================
 
 .text-responsive {
-  @include mobile {
-    font-size: 0.9em;
-    line-height: 1.4;
-  }
+  font-size: 0.9em;
+  line-height: 1.4;
 
-  @include tablet {
+  @include md {
     font-size: 1em;
     line-height: 1.5;
   }
 
-  @include desktop {
+  @include lg {
     font-size: 1.1em;
     line-height: 1.6;
   }
