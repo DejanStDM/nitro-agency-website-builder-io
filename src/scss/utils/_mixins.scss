@@ -341,11 +341,15 @@
   margin: 0 auto;
   padding: 0 1rem;
 
-  @include tablet {
+  @include sm {
+    padding: 0 1.5rem;
+  }
+
+  @include md {
     padding: 0 2rem;
   }
 
-  @include desktop {
+  @include lg {
     padding: 0 4rem;
   }
 }
