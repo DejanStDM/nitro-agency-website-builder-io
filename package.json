@@ -1,0 +1,22 @@
+{
+  "name": "sass-esbuild",
+  "version": "1.0.0",
+  "description": "Script for compiling multuple entry scss and js files into multiple output files",
+  "main": "index.js",
+  "scripts": {
+    "scss:watch": "sass --watch --style=compressed src/scss:css",
+    "js:watch": "node esbuild.mjs",
+    "live-server": "node live-server.mjs",
+    "start": "concurrently \"npm run scss:watch\" \"npm run js:watch\"",
+    "start:server": "concurrently \"npm run scss:watch\" \"npm run js:watch\" \"npm run live-server\""
+  },
+  "keywords": [],
+  "author": "Bojan Stojanovic",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.21.5",
+    "live-server": "^1.2.2",
+    "sass": "^1.77.4"
+  }
+}
