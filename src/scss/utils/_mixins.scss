@@ -226,90 +226,95 @@
   }
 }
 
-// Body Text
+// Body Text (Mobile-First)
 @mixin body-text($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(14px, 1.2vw, 16px);
-  line-height: clamp(20px, 1.6vw, 22px);
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.01em;
   color: $neutral-700;
+
+  @include md {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 // ==========================================================================
-// Paragraph Typography Mixins
+// Paragraph Typography Mixins (Mobile-First)
 // ==========================================================================
 
-// Paragraph P1
+// Paragraph P1 (Mobile-First)
 @mixin paragraph-p1($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(18px, 1.8vw, 24px);
-  line-height: clamp(24px, 2.2vw, 31px);
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: -0.02em;
   color: $black;
 
-  @include desktop {
+  @include md {
     font-size: 24px;
     line-height: 31px;
   }
 }
 
-// Paragraph P2
+// Paragraph P2 (Mobile-First)
 @mixin paragraph-p2($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(16px, 1.5vw, 20px);
-  line-height: clamp(22px, 1.8vw, 26px);
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: -0.02em;
   color: $black;
 
-  @include desktop {
+  @include md {
     font-size: 20px;
     line-height: 26px;
   }
 }
 
-// Paragraph P3
+// Paragraph P3 (Mobile-First)
 @mixin paragraph-p3($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(14px, 1.3vw, 18px);
-  line-height: clamp(20px, 1.6vw, 23px);
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.02em;
   color: $black;
 
-  @include desktop {
+  @include md {
     font-size: 18px;
     line-height: 23px;
   }
 }
 
-// Paragraph P4
+// Paragraph P4 (Mobile-First)
 @mixin paragraph-p4($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(14px, 1.1vw, 16px);
-  line-height: clamp(19px, 1.4vw, 21px);
+  font-size: 14px;
+  line-height: 19px;
   letter-spacing: -0.02em;
   color: $black;
 
-  @include desktop {
+  @include md {
     font-size: 16px;
     line-height: 21px;
   }
 }
 
-// Paragraph P5
+// Paragraph P5 (Mobile-First)
 @mixin paragraph-p5($weight: $weight-regular) {
   font-family: $font-secondary;
   font-weight: $weight;
-  font-size: clamp(12px, 1vw, 14px);
-  line-height: clamp(17px, 1.3vw, 19px);
+  font-size: 14px;
+  line-height: 17px;
   letter-spacing: -0.02em;
   color: $black;
 
-  @include desktop {
+  @include md {
     font-size: 14px;
     line-height: 19px;
   }
