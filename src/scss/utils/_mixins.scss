@@ -206,6 +206,85 @@
 }
 
 // ==========================================================================
+// Paragraph Typography Mixins
+// ==========================================================================
+
+// Paragraph P1
+@mixin paragraph-p1($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: clamp(24px, 2.2vw, 31px);
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+// Paragraph P2
+@mixin paragraph-p2($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: clamp(22px, 1.8vw, 26px);
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+// Paragraph P3
+@mixin paragraph-p3($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(14px, 1.3vw, 18px);
+  line-height: clamp(20px, 1.6vw, 23px);
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+// Paragraph P4
+@mixin paragraph-p4($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: clamp(19px, 1.4vw, 21px);
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+// Paragraph P5
+@mixin paragraph-p5($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: clamp(17px, 1.3vw, 19px);
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+// ==========================================================================
 // Utility Mixins
 // ==========================================================================
 
