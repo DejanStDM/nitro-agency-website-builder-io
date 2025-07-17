@@ -329,6 +329,120 @@ p {
 }
 
 // ==========================================================================
+// Paragraph Typography
+// ==========================================================================
+
+// Paragraph P1 Variants
+.paragraph-p1 {
+  @include paragraph-p1();
+
+  &--light {
+    @include paragraph-p1($weight-light);
+  }
+
+  &--regular {
+    @include paragraph-p1($weight-regular);
+  }
+
+  &--medium {
+    @include paragraph-p1($weight-medium);
+  }
+
+  &--bold {
+    @include paragraph-p1($weight-bold);
+  }
+}
+
+// Paragraph P2 Variants
+.paragraph-p2 {
+  @include paragraph-p2();
+
+  &--light {
+    @include paragraph-p2($weight-light);
+  }
+
+  &--regular {
+    @include paragraph-p2($weight-regular);
+  }
+
+  &--medium {
+    @include paragraph-p2($weight-medium);
+  }
+
+  &--bold {
+    @include paragraph-p2($weight-bold);
+  }
+}
+
+// Paragraph P3 Variants
+.paragraph-p3 {
+  @include paragraph-p3();
+
+  &--light {
+    @include paragraph-p3($weight-light);
+  }
+
+  &--regular {
+    @include paragraph-p3($weight-regular);
+  }
+
+  &--medium {
+    @include paragraph-p3($weight-medium);
+  }
+
+  &--bold {
+    @include paragraph-p3($weight-bold);
+  }
+}
+
+// Paragraph P4 Variants
+.paragraph-p4 {
+  @include paragraph-p4();
+
+  &--light {
+    @include paragraph-p4($weight-light);
+  }
+
+  &--regular {
+    @include paragraph-p4($weight-regular);
+  }
+
+  &--medium {
+    @include paragraph-p4($weight-medium);
+  }
+
+  &--bold {
+    @include paragraph-p4($weight-bold);
+  }
+}
+
+// Paragraph P5 Variants
+.paragraph-p5 {
+  @include paragraph-p5();
+
+  &--light {
+    @include paragraph-p5($weight-light);
+  }
+
+  &--regular {
+    @include paragraph-p5($weight-regular);
+  }
+
+  &--medium {
+    @include paragraph-p5($weight-medium);
+  }
+
+  &--bold {
+    @include paragraph-p5($weight-bold);
+  }
+
+  &--uppercase {
+    @include paragraph-p5($weight-bold);
+    text-transform: uppercase;
+  }
+}
+
+// ==========================================================================
 // Responsive Typography Utilities
 // ==========================================================================
 
