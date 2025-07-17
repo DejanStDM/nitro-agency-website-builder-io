@@ -61,31 +61,31 @@
 // Typography Mixins
 // ==========================================================================
 
-// Display Font D1
+// Display Font D1 (Mobile-First)
 @mixin display-d1($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(60px, 8vw, 120px);
-  line-height: clamp(70px, 8.5vw, 126px);
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 120px;
     line-height: 126px;
   }
 }
 
-// Display Font D2
+// Display Font D2 (Mobile-First)
 @mixin display-d2($weight: $weight-regular) {
   font-family: $font-primary;
   font-weight: $weight;
-  font-size: clamp(36px, 5vw, 72px);
-  line-height: clamp(44px, 6vw, 94px);
+  font-size: 36px;
+  line-height: 44px;
   letter-spacing: -0.02em;
   color: $primary-900;
 
-  @include desktop {
+  @include md {
     font-size: 72px;
     line-height: 94px;
   }
