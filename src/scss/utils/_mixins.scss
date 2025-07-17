@@ -1,0 +1,236 @@
+// ==========================================================================
+// Media Query Mixins
+// ==========================================================================
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+// ==========================================================================
+// Typography Mixins
+// ==========================================================================
+
+// Display Font D1
+@mixin display-d1($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(60px, 8vw, 120px);
+  line-height: clamp(70px, 8.5vw, 126px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 120px;
+    line-height: 126px;
+  }
+}
+
+// Display Font D2
+@mixin display-d2($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: clamp(44px, 6vw, 94px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 72px;
+    line-height: 94px;
+  }
+}
+
+// Heading H1
+@mixin heading-h1($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(32px, 4.5vw, 64px);
+  line-height: clamp(40px, 5.5vw, 83px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 64px;
+    line-height: 83px;
+  }
+}
+
+// Heading H1 Small
+@mixin heading-h1-small($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(28px, 3.8vw, 54px);
+  line-height: clamp(36px, 4.8vw, 70px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 54px;
+    line-height: 70px;
+  }
+}
+
+// Heading H2
+@mixin heading-h2($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(24px, 3.2vw, 48px);
+  line-height: clamp(32px, 4.2vw, 62px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+
+// Heading H2 Medium
+@mixin heading-h2-medium($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(22px, 2.8vw, 40px);
+  line-height: clamp(30px, 3.8vw, 52px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+// Heading H2 Small
+@mixin heading-h2-small($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(20px, 2.5vw, 36px);
+  line-height: clamp(28px, 3.2vw, 47px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 47px;
+  }
+}
+
+// Heading H3
+@mixin heading-h3($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(18px, 2.2vw, 32px);
+  line-height: clamp(26px, 2.8vw, 42px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+// Heading H3 Small
+@mixin heading-h3-small($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(16px, 2vw, 28px);
+  line-height: clamp(24px, 2.5vw, 36px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+// Heading H4
+@mixin heading-h4($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(14px, 1.8vw, 24px);
+  line-height: clamp(22px, 2.2vw, 31px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+// Heading H5
+@mixin heading-h5($weight: $weight-regular) {
+  font-family: $font-primary;
+  font-weight: $weight;
+  font-size: clamp(12px, 1.5vw, 20px);
+  line-height: clamp(18px, 1.8vw, 26px);
+  letter-spacing: -0.02em;
+  color: $primary-900;
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+// Body Text
+@mixin body-text($weight: $weight-regular) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: clamp(20px, 1.6vw, 22px);
+  letter-spacing: -0.01em;
+  color: $neutral-700;
+}
+
+// ==========================================================================
+// Utility Mixins
+// ==========================================================================
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin container($max-width: 1440px) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include tablet {
+    padding: 0 2rem;
+  }
+
+  @include desktop {
+    padding: 0 4rem;
+  }
+}
