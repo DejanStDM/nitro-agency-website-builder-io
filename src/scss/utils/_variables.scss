@@ -49,12 +49,11 @@ $weight-semi-bold: 600;
 $weight-bold: 700;
 
 // ==========================================================================
-// Breakpoints
+// Breakpoints (Bootstrap Values)
 // ==========================================================================
-$sm: 640px;
-$md: 768px;
+$xs: 0;
+$sm: 576px;
+$md: 768px; // Desktop starts here
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1440px;
-$hd: 1800px;
-$uw: 2200px;
+$xxl: 1400px;
