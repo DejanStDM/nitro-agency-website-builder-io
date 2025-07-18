@@ -5,7 +5,7 @@
 - **Project name:** nitro-agency-website-builder-io
 
 - **GitHub repo:** https://github.com/DejanStDM/nitro-agency-website-builder-io
-- **Figma:** https://www.figma.com/design/46yKyPt99b6cfxs1ZqoRmE/Nitro---Agency-Website-9--Page--Community-?node-id=1-2&p=f&t=CfNeDHBpywqA1XFG-0
+- **Figma:** https://www.figma.com/design/azYiRBolu4GjXkO27mjnyX/Nitro---Agency-Website-9--Page--Community---Copy-?node-id=1509-9781&p=f&m=dev
 
 This is a test project for evaluating [Builder.io](https://www.builder.io/) capabilities in converting Figma designs to actual code.
 

@@ -58,20 +58,20 @@
   }
 
   &__title {
-    @include heading-h1($weight-bold);
     margin: 0 0 1.25rem 0;
     color: $primary-text-black;
+    @include heading-h1($weight-bold);
 
     // Mobile styles already handled by heading-h1 mixin
   }
 
   &__description {
-    @include body-text();
     font-size: 1.25rem;
     line-height: 1.6;
     color: $neutral-700;
     margin: 0;
     max-width: 70ch;
+    @include body-text();
 
     // Mobile styles already handled by body-text mixin
   }
@@ -187,17 +187,17 @@
   }
 
   &__title {
-    @include heading-h4($weight-bold);
     color: $primary-900;
     margin: 0 0 0.75rem 0;
+    @include heading-h4($weight-bold);
   }
 
   &__meta {
-    @include body-text();
     font-size: 0.875rem;
     color: $neutral-500;
     margin: 0;
     letter-spacing: -0.02em;
+    @include body-text();
   }
 
   &__examples {

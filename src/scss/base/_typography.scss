@@ -232,12 +232,12 @@ h5 {
 // H6 (using H5 styling as base)
 .heading-h6,
 h6 {
+  font-size: clamp(10px, 1.2vw, 16px);   
+  line-height: clamp(16px, 1.6vw, 22px);  
   @include heading-h5();
-  font-size: clamp(10px, 1.2vw, 16px);
-  line-height: clamp(16px, 1.6vw, 22px);
 
   @include desktop {
-    font-size: 16px;
+    font-size: 16px;  
     line-height: 22px;
   }
 }
@@ -263,8 +263,8 @@ h6 {
 }
 
 p {
-  @include body-text();
   margin-bottom: 1rem;
+  @include body-text();
 
   &:last-child {
     margin-bottom: 0;
@@ -437,8 +437,8 @@ p {
   }
 
   &--uppercase {
-    @include paragraph-p5($weight-bold);
     text-transform: uppercase;
+    @include paragraph-p5($weight-bold);
   }
 }
 
